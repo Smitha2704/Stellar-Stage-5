@@ -63,7 +63,7 @@ export default class SpaceCraftsScreen extends Component {
                     <SafeAreaView style={styles.droidSafeArea} />
                     <ImageBackground source={require('../assets/stars.gif')} style={styles.backgroundImage}>
                         <View style={{ flex: 0.15, alignItems: 'center', justifyContent: 'center' }}>
-                            <Text style={styles.titleText}>Space Crafts</Text>
+                            <Text style={styles.titleText}>Spacecrafts</Text>
                         </View>
                         <View style={{ flex: 0.85 }}>
                             <FlatList
