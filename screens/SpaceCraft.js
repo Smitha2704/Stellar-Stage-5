@@ -15,18 +15,9 @@ export default class SpaceCraftsScreen extends Component {
         this.getData()
 
     }
-
+// To be filled by Devesh
     getData = () => {
-        axios.get("https://ll.thespacedevs.com/2.0.0/config/spacecraft/")
-            .then(response => {
-
-                this.setState({ aircrafts: response.data.results })
-
-            })
-            .catch(error => {
-                console.log(error.message)
-            })
-
+       
     }
 
 
@@ -66,11 +57,9 @@ export default class SpaceCraftsScreen extends Component {
                             <Text style={styles.titleText}>Spacecrafts</Text>
                         </View>
                         <View style={{ flex: 0.85 }}>
+                            //Give the right props for Flatlist
                             <FlatList
-                                keyExtractor={this.keyExtractor}
-                                data={this.state.aircrafts}
-                                renderItem={this.renderItem}
-                                initialNumToRender={10}
+                                
                             />
                         </View>
 
